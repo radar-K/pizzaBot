@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzabot</title>
+  </head>
+
+  <body>
+    <section class="container">
+      <h2>Happy to serve your pizza</h2>
+  
+      <div class="slider">
+          <div class="item active">
+              <h2>Pepperoni pizza</h2>
+              <img src="img/peppi.png" alt="Pepperoni pizza">
+          </div>
+          <div class="item">
+              <h2>Hawaiian pizza</h2>
+              <img src="img/hawaii.png" alt="Hawaiian pizza">
+          </div>
+          <div class="item">
+              <h2>Vegetarian pizza</h2>
+              <img src="img/veggi.png" alt="Vegetarian pizza">
+          </div>
+  
+          <button id="prev" onclick="prevSlide()">❮</button>
+          <button id="next" onclick="nextSlide()">❯</button>
+      </div>
+  
+      <form id="pizzaInput" action="/submit-form" method="POST">
+
+          <label>Which pizza do you want to order</label>
+          <br>
+          <input type="text" id="pizzaName">
+          <br>
+          <label for="quantity">How many pizzas do you want?</label><br> 
+          <input type="text" id="quantity" min="1" required><br><br>
+  
+          <button class="space" type="submit">Place your order</button>
+          
+          <div id="orderResult"></div>
+      </form>
+  </section>
+  
+
+
+
+    <script src="./pizzaWebb.js" charset="utf-8"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
